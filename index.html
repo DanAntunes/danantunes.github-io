@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,47 +19,140 @@
 
   <!-- Folha de estilo css -->
   <link rel="stylesheet" href="./src/assets/css/styles.css">
-
+  <link rel="stylesheet" href="./src/assets/css/media-queri.css">
   <!-- Favicon -->
   <link rel="shortcut icon" href="./src/assets/images/favicon/favicon.ico" type="image/x-icon">
-
 </head>
+
 <body>
   <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="header__brand">
-      <img class="brand__logo" src="src/assets/images/icon/logo.png" alt="logo DJA">
+      <a href="#home">
+        <img class="brand__logo" src="src/assets/images/icon/logo.png" alt="Logo DJA">
+      </a>
     </div>
-   
-    <i id="toggleTheme" class="bi bi-sun"></i>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
   </header>
-  <nav>
+
+  <nav class="nav--mobile">
     <ul class="menu menu--mobile">
       <li class="menu__item">
-        <a href="#home" class=" active menu__link">
-          <i class=" menu__icon bi bi-house-door"></i>
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
           <span class="menu__text">Home</span>
         </a>
       </li>
       <li class="menu__item">
-        <a href="#projetos" class="menu__link">
-          <i class=" menu__icon bi bi-window-stack"></i>
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
           <span class="menu__text">Projetos</span>
         </a>
       </li>
       <li class="menu__item">
-        <a href="#sobre" class="menu__link">
-          <i class=" menu__icon bi bi-person"></i>
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
           <span class="menu__text">Sobre</span>
         </a>
       </li>
       <li class="menu__item">
-        <a href="#contato" class="menu__link">
-          <i class=" menu__icon bi bi-envelope"></i>
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
           <span class="menu__text">Contato</span>
         </a>
       </li>
     </ul>
   </nav>
-  <h2>Danilo Antunes</h2>
+
+  <main>
+    <div class="main__content1">
+      <h1><b>Projetos Criativoss & </b>Desenvolvimento Front-End</h1>
+      <p>Danilo Antunes, Salvador-BA,Desenvolvedor Front-end.</p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/DanAntunes" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/dan-de-jesus/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul> 
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+      <iframe src="https://www.youtube.com/embed/JApy9CAM9ng?si=eRBtR_5jpf6BsP0g" 
+      title="YouTube video player" frameborder="0" allow="accelerometer;
+       autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias do mercado</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./src/assets/images/stacks/css.svg" alt="Logo Css3">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./src/assets/images/stacks/html.svg" alt="Logo HTML5">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./src/assets/images/stacks/bootstrap.svg" alt="Logo Bootstrap">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./src/assets/images/stacks/sass.svg" alt="Logo SASS">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./src/assets/images/stacks/js.svg" alt="Logo JS">
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>
+      © 2024. Todos Os Direitos Reservados. Dan Antunes.
+      <a href="https://github.com/DanAntunes" target="_blank">DJA</a>.
+    </p>
+  </footer>
+  <script src="./src/assets/scripts/script.js"></script>
 </body>
 </html>
