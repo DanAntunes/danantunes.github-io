@@ -19,6 +19,13 @@
   main, .projects, .about {
     padding: 8rem 6rem 4rem 6rem;
   }
+
+  .contact {
+    padding: 6rem;
+  }
+  .contact p {
+    width: 80%;
+  }
   .main__content1 {
     display: flex;
     flex-direction: column;
@@ -37,6 +44,34 @@
 @media (min-width: 992px) {
   .projects__card {
     flex-direction: row;
+  }
+  .projects__card.card--reverse {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .card__cover {
+    width: 55%;
+  }
+
+  .about {
+    gap: 5rem;
+  }
+
+  .about__content1, .about__content2 {
+    display: grid;
+    grid-template-columns: 34% 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about__description h2 {
+    text-align: left;
+  }
+
+  .description__buttons {
+    justify-content: flex-start;
   }
 }
 
@@ -74,6 +109,14 @@
   }
   .technologies__logo {
     height: 3rem;
+  }
+  p, span, li {
+    font-size: 1.15rem;
+  }
+
+  .card__buttons .btn,
+  .description__buttons .btn {
+    width: auto;
   }
 }
 
