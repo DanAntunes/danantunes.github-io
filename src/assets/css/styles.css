@@ -2,6 +2,7 @@
 @import url(./layout/header.css);
 @import url(./layout/footer.css);
 @import url(./styles/media-queri.css);
+@import url(./styles/reset.css);
 
 /* Variavies */
 :root, :root[data-theme='dark'] {
