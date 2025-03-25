@@ -1,0 +1,13 @@
+html[data-theme='light'] .brand__logo {
+  filter: invert(1);
+  filter: drop-shadow(1 -1mm 4mm rgb(0, 0, 0));
+}
+
+html[data-theme='light'] .technologies__logo {
+  filter: invert(1);
+}
+
+body {
+  background: var(--primary-bg-color);
+  color: var(--text-color);
+}
