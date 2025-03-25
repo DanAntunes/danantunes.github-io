@@ -1,0 +1,21 @@
+main, .projects, .about, .contact {
+  padding: 2.5rem 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem 1rem;
+}
+
+.main__content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__content2 iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
