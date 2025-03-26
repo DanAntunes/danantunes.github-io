@@ -18,3 +18,18 @@
   height: 3.25rem;
   filter: drop-shadow(0 0 0.75rem #f1f1f1);
 }
+
+
+@media (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid var(--primary-border-color);
+    padding: 1rem 6rem;
+    background: var(--primary-bg-color);
+  }
+}
+
+@media (min-width: 1400px){
+  .header {
+    padding: 1rem 15rem;
+  }
+}
