@@ -19,3 +19,12 @@
 .contact .email {
   text-transform: lowercase;
 }
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 6rem;
+  }
+  .contact p {
+    width: 80%;
+  }
+}
