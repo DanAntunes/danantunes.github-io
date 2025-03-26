@@ -52,3 +52,21 @@
   flex-direction: column;
   gap: .5rem; 
 }
+
+@media (min-width: 992px) {
+  .about {
+    gap: 5rem;
+  }
+
+  .about__content1, .about__content2 {
+    display: grid;
+    grid-template-columns: 34% 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about__description h2 {
+    text-align: left;
+  }
+}
