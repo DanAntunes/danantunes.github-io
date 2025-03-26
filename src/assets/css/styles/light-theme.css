@@ -7,6 +7,14 @@ html[data-theme='light'] .technologies__logo {
   filter: invert(1);
 }
 
+html[data-theme='dark'] .api{
+  filter: invert(1);
+}
+
+html[data-theme='light'] .api{
+  filter: invert(0);
+}
+
 body {
   background: var(--primary-bg-color);
   color: var(--text-color);
