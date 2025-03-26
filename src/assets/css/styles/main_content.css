@@ -8,3 +8,17 @@
   width: 100%;
   aspect-ratio: 16/9;
 }
+
+@media (min-width: 768px) {
+  .main__content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__content1 .btn {
+    width: auto;
+  }
+}
