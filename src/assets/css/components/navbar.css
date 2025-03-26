@@ -53,3 +53,16 @@
 .menu--social {
   gap: 1rem;
 }
+
+@media (min-width: 768px) {
+  .nav--mobile {
+    display: none;
+  }
+  .header__nav {
+    display: flex;
+  }
+  .header__nav,
+  .header__toggle {
+    min-width: 30%;
+  }
+}
