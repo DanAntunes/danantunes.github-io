@@ -42,3 +42,31 @@ h1, h2, h3 {
 p{
   text-align: justify;
 }
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5.25rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p, span, li {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1400px){
+  h1 {
+    font-size: 6.25rem;
+  }
+  h2 {
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 3.25rem;
+  }
+}
